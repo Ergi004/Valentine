@@ -25,7 +25,7 @@ export const FloatingHearts = () => {
   }, []);
 
   return (
-    <div className="fixed inset-0 overflow-hidden z-0">
+    <div className="fixed inset-0 overflow-hidden -z-20">
       {hearts.map((heart, i) => (
         <HeartIcon
           key={i}
