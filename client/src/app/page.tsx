@@ -3,10 +3,9 @@ import { HeroSection } from "@/components/Hero/Hero";
 
 export default function Home() {
   return (
-    <main className="min-h-screen p-8">
+    <main className=" p-8 overflow-hidden">
       <HeroSection />
       <FloatingHearts />
-      {/* Add more components as needed */}
     </main>
   );
 }

@@ -16,7 +16,16 @@ export const LoveLetter = () => {
     }
   };
 
-  console.log(animationStage);
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      if (isOpen) {
+        document.body.style.overflowY = "hidden";
+      } else {
+        document.body.style.overflowY = "auto";
+      }
+    }
+  }, [isOpen]);
+
   useEffect(() => {
     if (animationStage === "filling") {
       const timer = setTimeout(() => setAnimationStage("exploding"), 500);
