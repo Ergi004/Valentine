@@ -36,7 +36,7 @@ const Modal = ({
       {isOpen && (
         <div
           className={`absolute top-[40%]  left-6 max-sm:right-6 lg:left-[35%] rounded shadow-md p-4 text-red-500   sm:w-[450px] bg-white z-20  ${
-            finale && "top-[20%] sm:top-[15%]"
+            finale && "top-[5%] sm:top-[15%]"
           }`}
         >
           {isSecondModalOpen ? (
