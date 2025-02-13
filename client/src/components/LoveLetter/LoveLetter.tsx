@@ -33,7 +33,7 @@ export const LoveLetter = () => {
     <div className="max-w-2xl mx-auto my-16 p-8 bg-valentine-light rounded-lg shadow-lg">
       {!isOpen ? (
         <button className="w-full text-left" onClick={handleClick}>
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center justify-center">
             <svg
               className={`w-24 h-24 mx-auto text-valentine-red ${
                 animationStage === "exploding" ? "animate-explodeHeart" : ""
@@ -59,7 +59,7 @@ export const LoveLetter = () => {
                 fill="currentColor"
               />
             </svg>
-            <h2 className="font-cursive text-4xl text-valentine-red mt-4">
+            <h2 className="font-cursive text-2xl sm:text-4xl text-valentine-red mt-4 text-center ">
               Click to Open My Heart
             </h2>
           </div>
