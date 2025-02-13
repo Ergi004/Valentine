@@ -15,6 +15,8 @@ module.exports = {
         },
       },
       animation: {
+        fillHeart: "fillHeart 0.5s ease-out forwards",
+        explodeHeart: "explodeHeart 0.5s ease-out forwards",
         float: "float 3s ease-in-out infinite",
         heartbeat: "heartbeat 1s ease-in-out infinite",
       },
@@ -22,6 +24,14 @@ module.exports = {
         float: {
           "0%, 100%": { transform: "translateY(0)" },
           "50%": { transform: "translateY(-20px)" },
+        },
+        fillHeart: {
+          "0%": { transform: "scale(0)" },
+          "100%": { transform: "scale(1)" },
+        },
+        explodeHeart: {
+          "0%": { transform: "scale(1)", opacity: "1" },
+          "100%": { transform: "scale(3)", opacity: "0" },
         },
         heartbeat: {
           "0%, 100%": { transform: "scale(1)" },
